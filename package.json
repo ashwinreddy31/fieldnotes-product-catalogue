@@ -1,0 +1,13 @@
+{
+  "name": "product-catalogue",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm run build --workspace @catalogue/product-data-service && npm run dev --workspace @catalogue/backend",
+    "dev:frontend": "npm run dev --workspace @catalogue/frontend",
+    "build": "npm run build --workspace @catalogue/product-data-service && npm run build --workspace @catalogue/backend && npm run build --workspace @catalogue/frontend"
+  }
+}

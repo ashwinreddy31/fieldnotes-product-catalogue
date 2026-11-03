@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Test reports
+automation/report.html
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
